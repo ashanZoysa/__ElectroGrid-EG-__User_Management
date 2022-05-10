@@ -1,11 +1,11 @@
 <%@page import="com.User"%>
-<%@ page language="java" contentType="text/html"
-pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html, charset=utf-8;charset=UTF-8">
+	<meta charset="ISO-8859-1">
 	<title>User Management</title>
 	<link rel="stylesheet" href="Views/bootstrap.min.css">
 	<script src="Components/jquery-3.6.0.min.js"></script>
