@@ -39,7 +39,7 @@ pageEncoding="ISO-8859-1"%>
 		 User userObj = new User(); 
  		out.print(userObj.viewAllUsers()); 
  	%>
-</div>
+    </div>
 </div> </div> </div> 
 </body>
 </html>
