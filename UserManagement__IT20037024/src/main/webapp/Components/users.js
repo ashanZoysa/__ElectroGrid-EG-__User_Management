@@ -145,6 +145,34 @@ function validateUserForm(){
 	}
 	
 	
+	var email = $("#userEmail").val().trim();
+    var filter = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
+	 if(filter.test(email) === false)
+    {
+        return "You Have Entered An Invalid E-mail Address";
+    }
+    
+    
+    var phone = $("#userPhone").val().trim();
+    var phoneFilter = /[1-9]{1}[0-9]{9}/;
+   	if (phoneFilter.test(phone) === false) {
+        return "You Have Entered An Invalid Contact Number";
+    }
+    
+    var firstName =  $("#firstName").val().trim();
+    var filterFirst = /^[a-zA-Z]+$/i;
+    if (filterFirst.test(firstName) === false) {
+        return "You Have Entered An Invalid First Name";
+    }
+    
+    var lastName =  $("#lastName").val().trim();
+    var filterLast = /^[a-zA-Z]+$/i;
+    if (filterLast.test(lastName) === false) {
+        return "You Have Entered An Invalid Last Name";
+    }
+    
+	
+	
 		
 		/* is numerical value
 		var tmpPrice = $("#userPhone").val().trim();
