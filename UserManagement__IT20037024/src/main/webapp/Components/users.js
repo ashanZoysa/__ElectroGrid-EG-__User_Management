@@ -154,7 +154,7 @@ function validateUserForm(){
     
     
     var phone = $("#userPhone").val().trim();
-    var phoneFilter = /[1-9]{1}[0-9]{9}/;
+    var phoneFilter = /([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
    	if (phoneFilter.test(phone) === false) {
         return "You Have Entered An Invalid Contact Number";
     }
@@ -169,6 +169,13 @@ function validateUserForm(){
     var filterLast = /^[a-zA-Z]+$/i;
     if (filterLast.test(lastName) === false) {
         return "You Have Entered An Invalid Last Name";
+    }
+	
+	
+	var userType =  $("#userType").val().trim();
+    var filterType = /^[a-zA-Z]+$/i;
+    if (filterType.test(userType) === false) {
+        return "You Have Entered An Invalid User Type";
     }
     
 	
