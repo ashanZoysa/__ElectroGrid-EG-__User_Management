@@ -22,7 +22,7 @@ pageEncoding="ISO-8859-1"%>
  			<br> Enter Address * 
  			<input id="userAddress" name="userAddress" type="text" class="form-control form-control-sm" required/>
  			<br> Enter Contact Number * 
- 			<input id="userPhone" name="userPhone" maxlength="10" type="text" class="form-control form-control-sm" required/>
+ 			<input id="userPhone" name="userPhone" maxlength="20" type="text" class="form-control form-control-sm" required/>
  			<br> Enter Email * 
  			<input id="userEmail" name="userEmail" type="text" class="form-control form-control-sm" required/>
  			<br> Enter User Type * 
