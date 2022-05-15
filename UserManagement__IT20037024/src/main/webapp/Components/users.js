@@ -1,12 +1,18 @@
+$(document).ready(function(){ 
+	if ($("#alertSuccess").text().trim() == "") 
+ 	{ 
+ 		$("#alertSuccess").hide(); 
+    } 
+ 	$("#alertError").hide(); 
+}); 
+
 $(document).on("click", "#btnSave", function(event)
 { 
 	// Clear alerts---------------------
  		$("#alertSuccess").text(""); 
  		$("#alertSuccess").hide(); 
- 		$(".alertSuccess").hide(); 
  		$("#alertError").text(""); 
  		$("#alertError").hide(); 
- 		$(".alertError").hide(); 
  		
 // Form validation-------------------
 		var status = validateUserForm(); 
